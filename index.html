@@ -1,214 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>✦ El cuarto de Nicowo ✦</title>
   <meta name="description" content="Nicolás Galleguillos (Nicowo): estudiante de Ingeniería en TI en la UCN. Desarrollo web full stack, ciberseguridad y redes. Busco práctica profesional remota desde febrero de 2027.">
-  <meta name="theme-color" content="#f1e9ff">
+  <meta name="theme-color" content="#f3e8ff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="✦ El cuarto de Nicowo ✦">
   <meta property="og:description" content="Desarrollo web full stack, ciberseguridad y redes. Busco práctica profesional remota desde febrero de 2027.">
   <meta property="og:url" content="https://nicowo.me/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23f1e9ff'/%3E%3Cpath fill='%238f4fd0' d='M8 13C2 9 3 4 6 4c1 0 2 .6 2 1.6C8 4.600 9 4 10 4c3 0 4 5-2 9z'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23f3e8ff'/%3E%3Cpath fill='%237c3aed' d='M8 13C2 9 3 4 6 4c1 0 2 .6 2 1.6C8 4.600 9 4 10 4c3 0 4 5-2 9z'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;700&family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;700;900&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Saltar al contenido</a>
-
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span>✦ present day, present time ✦ ようこそ ✦ busco práctica profesional remota desde febrero de 2027 ✦ next.js, typescript y ciberseguridad ✦ desde La Serena, Chile ✦ close the world, open the next ✦</span>
-      <span>✦ present day, present time ✦ ようこそ ✦ busco práctica profesional remota desde febrero de 2027 ✦ next.js, typescript y ciberseguridad ✦ desde La Serena, Chile ✦ close the world, open the next ✦</span>
-    </div>
-  </div>
-
   <!--
     IMÁGENES Y GIFS PROPIOS: sube archivos a la carpeta gifs/ con estos nombres y aparecen solos:
-    banner, intro, izquierda-1, izquierda-2, derecha-1, derecha-2 (.gif, .webp, .png, .jpg).
-    Mira gifs/LEEME.md. Para ponerles texto alternativo, edita el alt de cada <img>.
+    fondo (todo el fondo), banner, intro, izquierda-1, izquierda-2, derecha-1, derecha-2 (.gif .webp .png .jpg; .webm también en los de columnas).
+    Mira gifs/LEEME.md.
   -->
-  <div class="page">
-    <header class="banner">
-      <svg id="scene" viewBox="0 0 800 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración pastel con nubes, estrellas y corazones"></svg>
-      <div class="banner__gif" data-gif="banner" hidden><img alt=""></div>
-      <h1 class="banner__name">Nicowo <small lang="ja">ニコウォのへや</small></h1>
-    </header>
+  <a class="skip" href="#main">Saltar al contenido</a>
 
-    <div class="cols">
-      <aside class="col col--side" aria-label="Perfil">
-        <section class="panel">
-          <h2 class="panel__title">~ perfil ~</h2>
-          <div class="panel__body profile">
-            <img class="profile__pic" src="https://github.com/FrankyTheCatt.png?size=240" width="120" height="120" alt="Avatar de Nicolás en GitHub">
-            <p class="profile__name">Nicolás Galleguillos</p>
-            <dl class="facts">
-              <div><dt>Ciudad</dt><dd>La Serena, Chile</dd></div>
-              <div><dt>Estudia</dt><dd>Ingeniería en TI, UCN</dd></div>
-              <div><dt>Años</dt><dd>2023 a 2027</dd></div>
-              <div><dt>Idiomas</dt><dd>Español nativo, inglés básico</dd></div>
-            </dl>
-          </div>
-        </section>
+  <div class="stars" aria-hidden="true">
+    <span style="--x:3%;--y:5%;--d:3s;--w:0s;--s:1.2rem">✦</span>
+    <span style="--x:90%;--y:12%;--d:4s;--w:.5s;--s:1rem">★</span>
+    <span style="--x:7%;--y:25%;--d:5s;--w:1s;--s:.8rem">✧</span>
+    <span style="--x:95%;--y:40%;--d:3s;--w:1.5s;--s:1rem">✦</span>
+    <span style="--x:2%;--y:60%;--d:4s;--w:2s;--s:1.4rem">★</span>
+    <span style="--x:88%;--y:75%;--d:5s;--w:.8s;--s:.9rem">✧</span>
+    <span style="--x:50%;--y:85%;--d:3s;--w:2.5s;--s:1rem">✦</span>
+    <span style="--x:50%;--y:20%;--d:6s;--w:.3s;--s:1.5rem">✿</span>
+    <span style="--x:15%;--y:50%;--d:4s;--w:1.8s;--s:1.1rem">❀</span>
+    <span style="--x:60%;--y:8%;--d:3s;--w:.7s;--s:1.3rem">✦</span>
+    <span style="--x:20%;--y:90%;--d:5s;--w:3s;--s:1rem">★</span>
+    <span style="--x:75%;--y:35%;--d:4s;--w:1.2s;--s:.8rem">✧</span>
+  </div>
 
-        <section class="panel">
-          <h2 class="panel__title">~ disponibilidad ~</h2>
-          <div class="panel__body">
-            <p class="status"><strong>Busco práctica profesional.</strong> Remota, desde febrero de 2027, en cualquier lugar de Chile.</p>
-            <p class="small">Áreas: desarrollo de software, ciberseguridad e infraestructura TI.</p>
-          </div>
-        </section>
+  <div class="marquee" aria-hidden="true">
+    <span>✧ present day, present time ✧ ようこそ ✧ busco práctica profesional remota desde febrero de 2027 ✧ next.js, typescript y ciberseguridad ✧ desde La Serena, Chile ✧ close the world, open the next ✧ present day, present time ✧ ようこそ ✧ busco práctica profesional remota desde febrero de 2027 ✧ next.js, typescript y ciberseguridad ✧ desde La Serena, Chile ✧ close the world, open the next ✧</span>
+  </div>
 
-        <section class="panel">
-          <h2 class="panel__title" lang="ja">~ ようこそ ~</h2>
-          <div class="panel__body">
-            <div class="art" data-gif="izquierda-1"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/izquierda-1.gif</code></div></div>
-          </div>
-        </section>
+  <main class="page">
+    <div class="site">
+      <header class="banner" data-gif="banner" data-gif-bg role="banner">
+        <div class="slot-empty">tu banner aquí<code>gifs/banner.gif</code></div>
+        <div class="banner__tab"><h1 class="banner__name">Nicowo <small lang="ja">ニコウォのへや</small></h1></div>
+      </header>
 
-        <section class="panel">
-          <h2 class="panel__title">~ vibes ~</h2>
-          <div class="panel__body">
-            <div class="art" data-gif="izquierda-2"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/izquierda-2.gif</code></div></div>
-            <ul class="chips" aria-label="Estética favorita">
-              <li>estética lain</li><li>pasteles</li><li>y2k</li><li>web retro</li><li>ciberseguridad</li>
-            </ul>
-          </div>
-        </section>
-      </aside>
-
-      <main id="main" class="col col--main">
-        <section class="panel">
-          <h2 class="panel__title">~ sobre mí ~</h2>
-          <div class="panel__body prose">
-            <p class="updated">Última actualización: 03.11.2026</p>
-            <p>Hola, soy Nicolás (Nicowo en internet). Estudio <a href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278">Ingeniería en Tecnologías de Información</a> en la Universidad Católica del Norte, campus Coquimbo, y trabajo desde 2022 mientras estudio.</p>
-            <p>Hago <a href="#proyectos">desarrollo web full stack</a>, me meto en <a href="#logros">ciberseguridad</a> y también instalo redes y cámaras cuando hace falta. Gané el primer lugar en el CTF regional de la Región de Coquimbo 2025 y trabajo con OWASP Top 10 y Burp Suite.</p>
-            <div class="art art--wide" data-gif="intro"><img alt=""><div class="art__empty">tu imagen o gif grande aquí<code>gifs/intro.gif</code></div></div>
-            <ul class="chips" aria-label="Temas">
-              <li>desarrollo web</li><li>ciberseguridad</li><li>ctf</li><li>redes</li><li>realidad aumentada</li><li>y2k</li><li>lain</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="panel">
-          <h2 class="panel__title">~ experiencia ~</h2>
-          <div class="panel__body">
-            <div class="jobs">
-              <article class="job">
-                <h3>El Pequeño Gigante</h3>
-                <p class="job__meta">TI, administración y desarrollo. Desde enero de 2022.</p>
-                <p>Mantengo la plataforma interna de inventario y precios (Next.js, TypeScript, Prisma) con panel de administración, historial de precios y estadísticas. Instalé el sistema de cámaras con DVR y configuré los routers y la red del local.</p>
-              </article>
-              <article class="job">
-                <h3>LaComanda.cl</h3>
-                <p class="job__meta">Responsable del desarrollo. Diciembre de 2025 a abril de 2026.</p>
-                <p>Plataforma para restaurantes y bares apoyada por CORFO Antofagasta. Los clientes piden desde el QR de la mesa y dividen la cuenta, los garzones atienden desde un tablero de mesas y hay un panel con métricas de ventas.</p>
-              </article>
+      <div class="layout">
+        <!-- Columna izquierda -->
+        <aside class="side" aria-label="Perfil">
+          <div class="widget">
+            <h2 class="widget__title">~ sobre mí</h2>
+            <div class="widget__img widget__img--photo"><img src="https://github.com/FrankyTheCatt.png?size=240" width="210" height="144" alt="" aria-hidden="true"></div>
+            <div class="widget__body">
+              <p class="profile-name">Nicolás Galleguillos</p>
+              <table class="info">
+                <tr><td class="info__key">Ciudad</td><td>La Serena, Chile</td></tr>
+                <tr><td class="info__key">Estudia</td><td>Ingeniería en TI, UCN</td></tr>
+                <tr><td class="info__key">Años</td><td>2023 a 2027</td></tr>
+                <tr><td class="info__key">Idiomas</td><td>Español nativo, inglés básico</td></tr>
+              </table>
             </div>
           </div>
-        </section>
 
-        <section class="panel">
-          <h2 class="panel__title">~ stack ~</h2>
-          <div class="panel__body">
-            <h3 class="group">Lenguajes</h3>
-            <ul class="chips"><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>C#</li><li>C++</li><li>C</li><li>HTML</li><li>CSS</li></ul>
-            <h3 class="group">Frameworks y librerías</h3>
-            <ul class="chips"><li>Next.js</li><li>React</li><li>Prisma</li><li>Tailwind CSS</li><li>Supabase</li><li>Unity</li></ul>
-            <h3 class="group">Herramientas</h3>
-            <ul class="chips"><li>Git</li><li>GitHub Actions</li><li>Docker</li><li>Burp Suite</li><li>OBS</li></ul>
-            <h3 class="group">Infraestructura</h3>
-            <ul class="chips"><li>Redes y routers</li><li>CCTV y DVR</li><li>Soporte técnico</li></ul>
+          <div class="widget">
+            <h2 class="widget__title">~ disponibilidad</h2>
+            <div class="widget__body">
+              <p><strong>Busco práctica profesional.</strong> Remota, desde febrero de 2027, en cualquier lugar de Chile.</p>
+              <p class="note">Áreas: desarrollo de software, ciberseguridad e infraestructura TI.</p>
+            </div>
           </div>
-        </section>
 
-        <section class="panel" id="proyectos">
-          <h2 class="panel__title">~ proyectos ~</h2>
-          <div class="panel__body">
-            <ul class="projects">
-              <li><a href="https://github.com/Gael-OC/AncoRA">AncoRA</a> — App Android de realidad aumentada en Unity para el campus UCN. Reconoce 4 edificios con 8 mapas de localización visual y les superpone modelos 3D a escala real. Filtro de pose propio, 73 pruebas automatizadas y fotogrametría con dron.</li>
-              <li><a href="https://github.com/FrankyTheCatt/nicowo-devsecops">nicowo-devsecops</a> — Todo App en Next.js y TypeScript con pipeline DevSecOps en GitHub Actions: lint, typecheck, tests con cobertura y build en Docker.</li>
-              <li><a href="https://github.com/FrankyTheCatt/VmDetector">VmDetector</a> — Utilidad para Windows que corre 7 chequeos independientes (hardware, PnP, MAC, CPU, BIOS, registro e hipervisor) para saber si el sistema corre en una máquina virtual.</li>
-              <li><a href="https://github.com/FrankyTheCatt/Ingeso-Ecomerce">Ingeso-Ecomerce</a> — Noporolos Store: e-commerce con Next.js 15, Supabase y shadcn/ui. Carrito, checkout y panel de administración con gráficos e inventario.</li>
-              <li><a href="https://github.com/FrankyTheCatt/YTSongRequestOBS">YTSongRequestOBS</a> — Bot local para Twitch: cola de canciones desde el chat (<code>!song</code>, <code>!queue</code>, <code>!skip</code>), control de YouTube y overlay para OBS.</li>
-              <li><a href="https://github.com/FrankyTheCatt/ArkadiaRhythm">ArkadiaRhythm</a> — Juego en C# hecho en equipo como proyecto universitario.</li>
-            </ul>
-            <p class="small"><a href="https://github.com/FrankyTheCatt?tab=repositories">Ver todos los repositorios en GitHub</a></p>
+          <div class="widget">
+            <h2 class="widget__title">~ vibes</h2>
+            <div class="widget__img" data-gif="izquierda-1"><div class="slot-media"></div><div class="slot-empty">tu gif aquí<code>gifs/izquierda-1.gif</code></div></div>
+            <div class="widget__body tags">
+              <span class="tag">estética lain</span><span class="tag">pasteles</span><span class="tag">y2k</span><span class="tag">web retro</span><span class="tag">ciberseguridad</span>
+            </div>
           </div>
-        </section>
 
-        <section class="panel" id="logros">
-          <h2 class="panel__title">~ logros ~</h2>
-          <div class="panel__body prose">
-            <p><strong>Primer lugar, CTF regional de la Región de Coquimbo (noviembre de 2025).</strong> Competencia de ciberseguridad tipo Capture The Flag con estudiantes de INACAP, UCN y AIEP, organizada por INACAP sede La Serena.</p>
+          <div class="widget">
+            <h2 class="widget__title" lang="ja">~ ようこそ</h2>
+            <div class="widget__img" data-gif="izquierda-2"><div class="slot-media"></div><div class="slot-empty">tu gif aquí<code>gifs/izquierda-2.gif</code></div></div>
           </div>
-        </section>
-      </main>
+        </aside>
 
-      <aside class="col col--side" aria-label="Enlaces">
-        <section class="panel">
-          <h2 class="panel__title">~ ♡ ~</h2>
-          <div class="panel__body">
-            <div class="art art--tall" data-gif="derecha-1"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/derecha-1.gif</code></div></div>
-          </div>
-        </section>
+        <!-- Contenido -->
+        <article class="main" id="main" aria-label="Contenido principal">
+          <section class="card">
+            <div class="card__head">
+              <span class="card__date">última actualización: 03.11.2026</span>
+              <h2 class="card__title">~ introducción / sobre mí ~</h2>
+            </div>
+            <div class="card__body">
+              <p>hola, soy Nicolás (Nicowo en internet). estudio <strong>Ingeniería en Tecnologías de Información</strong> en la Universidad Católica del Norte, campus Coquimbo, y trabajo desde 2022 mientras estudio.</p>
+              <p>hago <strong>desarrollo web full stack</strong>, me meto en <strong>ciberseguridad</strong> y también instalo <strong>redes</strong> y cámaras cuando hace falta. gané el primer lugar en el CTF regional de la Región de Coquimbo 2025 y trabajo con OWASP Top 10 y Burp Suite.</p>
+              <div class="media media--auto" data-gif="intro"><div class="slot-media"></div><div class="slot-empty">tu imagen o gif grande aquí<code>gifs/intro.gif</code></div></div>
+            </div>
+            <div class="card__foot">
+              <span class="tag tag--post">desarrollo web</span><span class="tag tag--post">ciberseguridad</span><span class="tag tag--post">ctf</span><span class="tag tag--post">redes</span><span class="tag tag--post">realidad aumentada</span><span class="tag tag--post">y2k</span><span class="tag tag--post">lain</span>
+            </div>
+          </section>
 
-        <section class="panel">
-          <h2 class="panel__title">~ redes ~</h2>
-          <div class="panel__body">
-            <ul class="links">
-              <li><span>GitHub</span><a href="https://github.com/FrankyTheCatt">FrankyTheCatt</a></li>
-              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278">nicolas-galleguillos</a></li>
-            </ul>
-          </div>
-        </section>
+          <section class="card">
+            <div class="card__head">
+              <span class="card__date">última actualización: 03.11.2026</span>
+              <h2 class="card__title">~ experiencia ~</h2>
+            </div>
+            <div class="card__body">
+              <div class="mini-grid">
+                <article class="mini">
+                  <span class="mini__name">El Pequeño Gigante</span> <span class="mini__cat">ti, administración y desarrollo · desde ene 2022</span>
+                  <p class="mini__text">Mantengo la plataforma interna de inventario y precios (Next.js, TypeScript, Prisma) con panel de administración, historial de precios y estadísticas. Instalé el sistema de cámaras con DVR y configuré los routers y la red del local.</p>
+                </article>
+                <article class="mini">
+                  <span class="mini__name">LaComanda.cl</span> <span class="mini__cat">responsable del desarrollo · dic 2025 a abr 2026</span>
+                  <p class="mini__text">Plataforma para restaurantes y bares apoyada por CORFO Antofagasta. Los clientes piden desde el QR de la mesa y dividen la cuenta, los garzones atienden desde un tablero de mesas y hay un panel con métricas de ventas.</p>
+                </article>
+              </div>
+            </div>
+          </section>
 
-        <section class="panel panel--wired">
-          <h2 class="panel__title">~ wired ~</h2>
-          <div class="panel__body">
-            <p class="glitch" data-text="present day,">present day,</p>
-            <p class="glitch glitch--late" data-text="present time.">present time.</p>
-            <p class="small">close the world, open the next.</p>
-          </div>
-        </section>
+          <section class="card">
+            <div class="card__head">
+              <span class="card__date">última actualización: 03.11.2026</span>
+              <h2 class="card__title">~ stack ~</h2>
+            </div>
+            <div class="card__body stack">
+              <div class="stack__group"><span class="stack__label">lenguajes</span><div class="tags"><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">C#</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">HTML</span><span class="tag">CSS</span></div></div>
+              <div class="stack__group"><span class="stack__label">frameworks y librerías</span><div class="tags"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">Prisma</span><span class="tag">Tailwind CSS</span><span class="tag">Supabase</span><span class="tag">Unity</span></div></div>
+              <div class="stack__group"><span class="stack__label">herramientas</span><div class="tags"><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Docker</span><span class="tag">Burp Suite</span><span class="tag">OBS</span></div></div>
+              <div class="stack__group"><span class="stack__label">infraestructura</span><div class="tags"><span class="tag">Redes y routers</span><span class="tag">CCTV y DVR</span><span class="tag">Soporte técnico</span></div></div>
+            </div>
+          </section>
 
-        <section class="panel">
-          <h2 class="panel__title">~ ahora ~</h2>
-          <div class="panel__body">
-            <ul class="now">
-              <li>Cursando cuarto año de Ingeniería en TI.</li>
-              <li>Desarrollando AncoRA, realidad aumentada en Unity.</li>
-              <li>Cuidando la plataforma de inventario de El Pequeño Gigante.</li>
-              <li>Buscando práctica remota para febrero de 2027.</li>
-            </ul>
-          </div>
-        </section>
+          <section class="card" id="proyectos">
+            <div class="card__head">
+              <span class="card__date">última actualización: 03.11.2026</span>
+              <h2 class="card__title">~ proyectos ~</h2>
+            </div>
+            <div class="card__body">
+              <ul class="projects">
+                <li><a href="https://github.com/Gael-OC/AncoRA">AncoRA</a> — App Android de realidad aumentada en Unity para el campus UCN. Reconoce 4 edificios con 8 mapas de localización visual y les superpone modelos 3D a escala real. Filtro de pose propio, 73 pruebas automatizadas y fotogrametría con dron.</li>
+                <li><a href="https://github.com/FrankyTheCatt/nicowo-devsecops">nicowo-devsecops</a> — Todo App en Next.js y TypeScript con pipeline DevSecOps en GitHub Actions: lint, typecheck, tests con cobertura y build en Docker.</li>
+                <li><a href="https://github.com/FrankyTheCatt/VmDetector">VmDetector</a> — Utilidad para Windows que corre 7 chequeos independientes (hardware, PnP, MAC, CPU, BIOS, registro e hipervisor) para saber si el sistema corre en una máquina virtual.</li>
+                <li><a href="https://github.com/FrankyTheCatt/Ingeso-Ecomerce">Ingeso-Ecomerce</a> — Noporolos Store: e-commerce con Next.js 15, Supabase y shadcn/ui. Carrito, checkout y panel de administración con gráficos e inventario.</li>
+                <li><a href="https://github.com/FrankyTheCatt/YTSongRequestOBS">YTSongRequestOBS</a> — Bot local para Twitch: cola de canciones desde el chat (<code>!song</code>, <code>!queue</code>, <code>!skip</code>), control de YouTube y overlay para OBS.</li>
+                <li><a href="https://github.com/FrankyTheCatt/ArkadiaRhythm">ArkadiaRhythm</a> — Juego en C# hecho en equipo como proyecto universitario.</li>
+              </ul>
+            </div>
+            <div class="card__foot">
+              <span class="tag tag--post">proyectos</span><span class="tag tag--post">devsecops</span><span class="tag tag--post">unity</span><span class="tag tag--post">next.js</span>
+              <a class="card__more" href="https://github.com/FrankyTheCatt?tab=repositories">ver todos en GitHub</a>
+            </div>
+          </section>
 
-        <section class="panel">
-          <h2 class="panel__title">~ ✦ ~</h2>
-          <div class="panel__body">
-            <div class="art" data-gif="derecha-2"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/derecha-2.gif</code></div></div>
-          </div>
-        </section>
+          <section class="card" id="logros">
+            <div class="card__head">
+              <span class="card__date">noviembre de 2025</span>
+              <h2 class="card__title">~ logros ~</h2>
+            </div>
+            <div class="card__body">
+              <p><strong>Primer lugar, CTF regional de la Región de Coquimbo.</strong> Competencia de ciberseguridad tipo Capture The Flag con estudiantes de INACAP, UCN y AIEP, organizada por INACAP sede La Serena.</p>
+            </div>
+          </section>
+        </article>
 
-        <section class="panel">
-          <h2 class="panel__title">~ contacto ~</h2>
-          <div class="panel__body">
-            <p>¿Tienes una práctica remota en TI? Escríbeme por <a href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278">LinkedIn</a>.</p>
-            <a class="button88" href="https://nicowo.me/" aria-label="Botón 88x31 de nicowo.me">nicowo.me ♡</a>
+        <!-- Columna derecha -->
+        <aside class="side side--right" aria-label="Enlaces">
+          <div class="widget">
+            <h2 class="widget__title">~ redes</h2>
+            <div class="widget__img" data-gif="derecha-1"><div class="slot-media"></div><div class="slot-empty">tu gif aquí<code>gifs/derecha-1.gif</code></div></div>
+            <div class="widget__body">
+              <div class="social-list">
+                <a class="social-link" href="https://github.com/FrankyTheCatt"><strong>GitHub</strong> <span>FrankyTheCatt</span></a>
+                <a class="social-link" href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278"><strong>LinkedIn</strong> <span>nicolas-galleguillos</span></a>
+              </div>
+            </div>
           </div>
-        </section>
-      </aside>
+
+          <div class="widget">
+            <h2 class="widget__title widget__title--center">~ wired</h2>
+            <div class="widget__body wired">
+              <p class="glitch">present day,</p>
+              <p class="glitch glitch--late">present time.</p>
+              <p class="note">close the world, open the next.</p>
+            </div>
+          </div>
+
+          <div class="widget">
+            <h2 class="widget__title widget__title--center">~ ahora</h2>
+            <div class="widget__body">
+              <ul class="now">
+                <li>Cursando cuarto año de Ingeniería en TI.</li>
+                <li>Desarrollando AncoRA, realidad aumentada en Unity.</li>
+                <li>Cuidando la plataforma de inventario de El Pequeño Gigante.</li>
+                <li>Buscando práctica remota para febrero de 2027.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="widget">
+            <h2 class="widget__title">~ mood</h2>
+            <div class="widget__img widget__img--tall" data-gif="derecha-2"><div class="slot-media"></div><div class="slot-empty">tu gif aquí<code>gifs/derecha-2.gif</code></div></div>
+          </div>
+
+          <div class="widget">
+            <h2 class="widget__title">~ contacto</h2>
+            <div class="widget__body">
+              <p>¿Tienes una práctica remota en TI? Escríbeme por <a href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278">LinkedIn</a>.</p>
+              <a class="btn88" href="https://nicowo.me/" aria-label="Botón 88x31 de nicowo.me">nicowo.me</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="foot">
+        <p class="foot__title">~ gracias por pasar ~</p>
+        <p class="foot__text">hecho a mano con HTML y CSS ✦ 手作り ✦ close the world, open the next</p>
+      </footer>
     </div>
-
-    <footer class="foot">
-      <p>✦ hecho a mano con HTML y CSS ✦ 手作り ✦</p>
-    </footer>
-  </div>
+  </main>
 
   <script src="scene.js"></script>
 </body>
