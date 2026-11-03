@@ -1,18 +1,19 @@
 # Tus GIFs e imágenes
 
-Sube aquí tus propios GIFs o imágenes y aparecen solos en la página. No hay que tocar código.
-Mientras un espacio no tenga archivo, muestra un recuadro con el nombre que debes usar.
+Los archivos de esta carpeta aparecen solos en la página. Para cambiar una imagen, reemplaza el archivo
+con el mismo nombre (puede tener otra extensión: `.gif`, `.webp`, `.png`, `.jpg`, `.jpeg`).
+Si borras un archivo, ese espacio vuelve a mostrar un recuadro con el nombre que debes usar.
 
 | Nombre del archivo | Dónde aparece |
 |---|---|
 | `fondo.jpg` | Fondo de toda la página (se ve suave, con un velo lavanda encima) |
-| `banner.gif` | Banner de arriba (unos 1100 x 210 px) |
-| `intro.gif` | Imagen grande dentro de "introducción / sobre mí" |
-| `izquierda-1.gif` | Panel "vibes", columna izquierda (210 x 144 px) |
-| `izquierda-2.gif` | Panel "ようこそ", columna izquierda (210 x 144 px) |
-| `derecha-1.gif` | Panel "redes", columna derecha (175 x 144 px) |
-| `derecha-2.gif` | Panel "mood", columna derecha (175 x 200 px) |
+| `banner.jpg` | Banner de arriba |
+| `intro.webp` | Imagen grande dentro de "introducción / sobre mí" (animada) |
+| `izquierda-1.jpg` | Panel "vibes", columna izquierda |
+| `izquierda-2.jpg` | Panel "ようこそ", columna izquierda |
+| `derecha-1.jpg` | Panel "redes", columna derecha |
+| `derecha-2.jpg` | Panel "mood", columna derecha |
+| `galeria-1.jpg` a `galeria-7.jpg` | Galería de abajo (estas se agregan o quitan en `index.html`, sección `id="galeria"`) |
 
-Sirven `.gif`, `.webp`, `.png`, `.jpg` y `.jpeg` (mismo nombre, otra extensión).
-En los paneles de las columnas también sirve `.webm` (video corto en bucle, sin sonido).
-Las imágenes de los paneles se recortan al centro para llenar el espacio.
+En los espacios de las columnas y en `intro` también sirven videos `.webm` y `.mp4` cortos (en bucle y sin sonido).
+Los GIFs muy pesados cargan lento; conviene convertirlos a `.webp` animado.

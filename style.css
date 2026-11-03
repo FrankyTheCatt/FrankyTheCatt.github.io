@@ -105,7 +105,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 .banner {
   position: relative;
   min-height: 210px;
-  background: linear-gradient(135deg, #ede1ff, #dbe4ff 55%, #f3dcff) center 25% / cover;
+  background: linear-gradient(135deg, #ede1ff, #dbe4ff 55%, #f3dcff) center 30% / cover;
   border: 3px solid var(--violet);
   border-bottom: 0;
   outline: 2px solid var(--lilac);
@@ -145,7 +145,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 }
 .slot-empty code { font-family: var(--font-vt); font-size: 1rem; font-weight: 400; }
 .has-gif > .slot-empty { display: none; }
-.slot-media img, .slot-media video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.slot-media img, .slot-media video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
 .banner.has-gif { background-size: cover; }
 
 /* Contenedor vidrio */
@@ -248,7 +248,12 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 /* Imagen grande de la introducción */
 .media { position: relative; margin-top: 4px; overflow: hidden; border-radius: 4px; background: linear-gradient(135deg, var(--tint), var(--lilac-pale)); }
 .media--auto:not(.has-gif) { min-height: 240px; border: 2px dashed var(--violet-soft); }
-.media--auto .slot-media img { height: auto; }
+.media--auto .slot-media img, .media--auto .slot-media video { height: auto; }
+
+/* Galería */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.gallery img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 25%; border: 2px solid var(--lilac); border-radius: 4px; transition: transform 0.2s, border-color 0.2s; }
+.gallery img:hover { transform: scale(1.03); border-color: var(--violet); }
 
 /* Experiencia */
 .mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
@@ -338,4 +343,5 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
   .marquee, .marquee span, .widget__title, .glitch { animation: none; }
   .marquee { overflow-x: auto; }
   .stars span { animation: none; opacity: 0.5; }
+  .gallery img { transition: none; }
 }

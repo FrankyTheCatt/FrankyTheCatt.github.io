@@ -2,7 +2,7 @@
 // Si un archivo no existe, su espacio muestra el nombre que debes usar.
 (function () {
   var imageExts = ["gif", "webp", "png", "jpg", "jpeg"];
-  var videoExts = ["webm"];
+  var videoExts = ["webm", "mp4"];
 
   function find(base, withVideo, done) {
     var exts = withVideo ? imageExts.concat(videoExts) : imageExts;
