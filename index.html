@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>✦ El cuarto de Nicowo ✦</title>
   <meta name="description" content="Nicolás Galleguillos (Nicowo): estudiante de Ingeniería en TI en la UCN. Desarrollo web full stack, ciberseguridad y redes. Busco práctica profesional remota desde febrero de 2027.">
-  <meta name="theme-color" content="#e6d7ff">
+  <meta name="theme-color" content="#f1e9ff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="✦ El cuarto de Nicowo ✦">
   <meta property="og:description" content="Desarrollo web full stack, ciberseguridad y redes. Busco práctica profesional remota desde febrero de 2027.">
   <meta property="og:url" content="https://nicowo.me/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23e6d7ff'/%3E%3Cpath fill='%23ff6fb5' d='M8 13C2 9 3 4 6 4c1 0 2 .6 2 1.6C8 4.600 9 4 10 4c3 0 4 5-2 9z'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23f1e9ff'/%3E%3Cpath fill='%238f4fd0' d='M8 13C2 9 3 4 6 4c1 0 2 .6 2 1.6C8 4.600 9 4 10 4c3 0 4 5-2 9z'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Nunito:wght@400;700&family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,10 +26,14 @@
     </div>
   </div>
 
+  <!--
+    IMÁGENES Y GIFS PROPIOS: sube archivos a la carpeta gifs/ con estos nombres y aparecen solos:
+    banner, intro, izquierda-1, izquierda-2, derecha-1, derecha-2 (.gif, .webp, .png, .jpg).
+    Mira gifs/LEEME.md. Para ponerles texto alternativo, edita el alt de cada <img>.
+  -->
   <div class="page">
     <header class="banner">
       <svg id="scene" viewBox="0 0 800 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración pastel con nubes, estrellas y corazones"></svg>
-      <!-- Banner propio: sube gifs/banner.gif (o .webp, .png, .jpg) y reemplaza la ilustración -->
       <div class="banner__gif" data-gif="banner" hidden><img alt=""></div>
       <h1 class="banner__name">Nicowo <small lang="ja">ニコウォのへや</small></h1>
     </header>
@@ -50,7 +54,7 @@
           </div>
         </section>
 
-        <section class="panel panel--pink">
+        <section class="panel">
           <h2 class="panel__title">~ disponibilidad ~</h2>
           <div class="panel__body">
             <p class="status"><strong>Busco práctica profesional.</strong> Remota, desde febrero de 2027, en cualquier lugar de Chile.</p>
@@ -58,15 +62,17 @@
           </div>
         </section>
 
-        <!-- Paneles de GIF: se muestran solos cuando existe gifs/izquierda-1.gif, gifs/izquierda-2.gif, etc. -->
-        <section class="panel" data-gif="izquierda-1" hidden>
+        <section class="panel">
           <h2 class="panel__title" lang="ja">~ ようこそ ~</h2>
-          <div class="panel__body gifbox"><img alt=""></div>
+          <div class="panel__body">
+            <div class="art" data-gif="izquierda-1"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/izquierda-1.gif</code></div></div>
+          </div>
         </section>
 
         <section class="panel">
           <h2 class="panel__title">~ vibes ~</h2>
           <div class="panel__body">
+            <div class="art" data-gif="izquierda-2"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/izquierda-2.gif</code></div></div>
             <ul class="chips" aria-label="Estética favorita">
               <li>estética lain</li><li>pasteles</li><li>y2k</li><li>web retro</li><li>ciberseguridad</li>
             </ul>
@@ -79,10 +85,11 @@
           <h2 class="panel__title">~ sobre mí ~</h2>
           <div class="panel__body prose">
             <p class="updated">Última actualización: 03.11.2026</p>
-            <p>Hola, soy Nicolás (Nicowo en internet). Estudio Ingeniería en Tecnologías de Información en la Universidad Católica del Norte, campus Coquimbo, y trabajo desde 2022 mientras estudio.</p>
-            <p>Hago desarrollo web full stack, me meto en ciberseguridad y también instalo redes y cámaras cuando hace falta. Gané el primer lugar en el CTF regional de la Región de Coquimbo 2025 y trabajo con OWASP Top 10 y Burp Suite.</p>
+            <p>Hola, soy Nicolás (Nicowo en internet). Estudio <a href="https://www.linkedin.com/in/nicolas-galleguillos-a74a17278">Ingeniería en Tecnologías de Información</a> en la Universidad Católica del Norte, campus Coquimbo, y trabajo desde 2022 mientras estudio.</p>
+            <p>Hago <a href="#proyectos">desarrollo web full stack</a>, me meto en <a href="#logros">ciberseguridad</a> y también instalo redes y cámaras cuando hace falta. Gané el primer lugar en el CTF regional de la Región de Coquimbo 2025 y trabajo con OWASP Top 10 y Burp Suite.</p>
+            <div class="art art--wide" data-gif="intro"><img alt=""><div class="art__empty">tu imagen o gif grande aquí<code>gifs/intro.gif</code></div></div>
             <ul class="chips" aria-label="Temas">
-              <li>desarrollo web</li><li>ciberseguridad</li><li>ctf</li><li>redes</li><li>realidad aumentada</li>
+              <li>desarrollo web</li><li>ciberseguridad</li><li>ctf</li><li>redes</li><li>realidad aumentada</li><li>y2k</li><li>lain</li>
             </ul>
           </div>
         </section>
@@ -98,7 +105,7 @@
               </article>
               <article class="job">
                 <h3>LaComanda.cl</h3>
-                <p class="job__meta">Desarrollador principal. Diciembre de 2025 a abril de 2026.</p>
+                <p class="job__meta">Responsable del desarrollo. Diciembre de 2025 a abril de 2026.</p>
                 <p>Plataforma para restaurantes y bares apoyada por CORFO Antofagasta. Los clientes piden desde el QR de la mesa y dividen la cuenta, los garzones atienden desde un tablero de mesas y hay un panel con métricas de ventas.</p>
               </article>
             </div>
@@ -119,7 +126,7 @@
           </div>
         </section>
 
-        <section class="panel">
+        <section class="panel" id="proyectos">
           <h2 class="panel__title">~ proyectos ~</h2>
           <div class="panel__body">
             <ul class="projects">
@@ -134,7 +141,7 @@
           </div>
         </section>
 
-        <section class="panel">
+        <section class="panel" id="logros">
           <h2 class="panel__title">~ logros ~</h2>
           <div class="panel__body prose">
             <p><strong>Primer lugar, CTF regional de la Región de Coquimbo (noviembre de 2025).</strong> Competencia de ciberseguridad tipo Capture The Flag con estudiantes de INACAP, UCN y AIEP, organizada por INACAP sede La Serena.</p>
@@ -143,6 +150,13 @@
       </main>
 
       <aside class="col col--side" aria-label="Enlaces">
+        <section class="panel">
+          <h2 class="panel__title">~ ♡ ~</h2>
+          <div class="panel__body">
+            <div class="art art--tall" data-gif="derecha-1"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/derecha-1.gif</code></div></div>
+          </div>
+        </section>
+
         <section class="panel">
           <h2 class="panel__title">~ redes ~</h2>
           <div class="panel__body">
@@ -174,14 +188,11 @@
           </div>
         </section>
 
-        <section class="panel" data-gif="derecha-1" hidden>
-          <h2 class="panel__title">~ ♡ ~</h2>
-          <div class="panel__body gifbox"><img alt=""></div>
-        </section>
-
-        <section class="panel" data-gif="derecha-2" hidden>
+        <section class="panel">
           <h2 class="panel__title">~ ✦ ~</h2>
-          <div class="panel__body gifbox"><img alt=""></div>
+          <div class="panel__body">
+            <div class="art" data-gif="derecha-2"><img alt=""><div class="art__empty">tu gif aquí<code>gifs/derecha-2.gif</code></div></div>
+          </div>
         </section>
 
         <section class="panel">
