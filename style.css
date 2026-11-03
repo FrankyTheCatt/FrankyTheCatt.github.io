@@ -250,10 +250,6 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 .media--auto:not(.has-gif) { min-height: 240px; border: 2px dashed var(--violet-soft); }
 .media--auto .slot-media img, .media--auto .slot-media video { height: auto; }
 
-/* Galería */
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
-.gallery img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 25%; border: 2px solid var(--lilac); border-radius: 4px; transition: transform 0.2s, border-color 0.2s; }
-.gallery img:hover { transform: scale(1.03); border-color: var(--violet); }
 
 /* Experiencia */
 .mini-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
@@ -284,17 +280,6 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 .now li { position: relative; padding: 5px 0 5px 18px; font-size: 0.82rem; line-height: 1.45; border-top: 1px dashed var(--line); }
 .now li:first-child { border-top: 0; }
 .now li::before { content: "♡"; position: absolute; left: 0; top: 4px; color: var(--accent-strong); }
-
-/* Wired (guiño a Lain) */
-.wired { text-align: center; background: repeating-linear-gradient(0deg, rgba(124, 58, 237, 0.06) 0 2px, transparent 2px 4px), rgba(245, 243, 255, 0.7); }
-.glitch { font-family: var(--font-vt); font-size: 1.5rem; line-height: 1.2; color: var(--text-title); animation: glitch 7s steps(1) infinite; }
-.glitch--late { animation-delay: -3.5s; }
-@keyframes glitch {
-  0%, 90%, 100% { text-shadow: none; transform: none; }
-  92% { text-shadow: 2px 0 #f0abfc, -2px 0 #7dd3fc; transform: translateX(1px); }
-  94% { text-shadow: -2px 0 #f0abfc, 2px 0 #7dd3fc; transform: translateX(-1px); }
-  96% { text-shadow: none; transform: none; }
-}
 
 /* Botón 88x31 */
 .btn88 {
@@ -340,8 +325,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee, .marquee span, .widget__title, .glitch { animation: none; }
+  .marquee, .marquee span, .widget__title { animation: none; }
   .marquee { overflow-x: auto; }
   .stars span { animation: none; opacity: 0.5; }
-  .gallery img { transition: none; }
 }

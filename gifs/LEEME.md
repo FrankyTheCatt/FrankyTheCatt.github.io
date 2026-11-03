@@ -9,11 +9,12 @@ Si borras un archivo, ese espacio vuelve a mostrar un recuadro con el nombre que
 | `fondo.jpg` | Fondo de toda la página (se ve suave, con un velo lavanda encima) |
 | `banner.jpg` | Banner de arriba |
 | `intro.webp` | Imagen grande dentro de "introducción / sobre mí" (animada) |
-| `izquierda-1.jpg` | Panel "vibes", columna izquierda |
+| `izquierda-1.jpg` | Panel "me gusta", columna izquierda |
 | `izquierda-2.jpg` | Panel "ようこそ", columna izquierda |
 | `derecha-1.jpg` | Panel "redes", columna derecha |
 | `derecha-2.jpg` | Panel "mood", columna derecha |
-| `galeria-1.jpg` a `galeria-7.jpg` | Galería de abajo (estas se agregan o quitan en `index.html`, sección `id="galeria"`) |
 
 En los espacios de las columnas y en `intro` también sirven videos `.webm` y `.mp4` cortos (en bucle y sin sonido).
-Los GIFs muy pesados cargan lento; conviene convertirlos a `.webp` animado.
+Los GIFs muy pesados cargan lento; conviene convertirlos a `.webp` animado, por ejemplo con ffmpeg:
+
+    ffmpeg -i video.mp4 -vf "fps=24,scale=736:-2" -loop 0 -an -c:v libwebp_anim -quality 75 intro.webp
