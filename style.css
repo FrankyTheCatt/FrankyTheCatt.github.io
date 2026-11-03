@@ -1,9 +1,9 @@
 :root {
-  --text: #7a52b8;
-  --text-strong: #5f3aa8;
-  --muted: #7b61ad;
-  --accent: #8f4fd0;
-  --title: #7a4de0;
+  --text: #8650d0;
+  --text-strong: #6c2fc0;
+  --muted: #7f52c4;
+  --accent: #7a3acb;
+  --title: #7440e0;
   --panel: #fbf8ff;
   --lav-bg: #f1e9ff;
   --lav-line: #d6c3fa;
@@ -206,7 +206,7 @@ strong { color: var(--text-strong); }
 .chips li {
   padding: 1px 12px 2px;
   font-size: 0.88rem;
-  color: #7a53bb;
+  color: #7c48cc;
   background: #f6f0ff;
   border: 1.5px solid var(--lav-soft);
   border-radius: 999px;
