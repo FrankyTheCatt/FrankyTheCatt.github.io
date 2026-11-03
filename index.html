@@ -28,7 +28,9 @@
 
   <div class="page">
     <header class="banner">
-      <svg id="scene" viewBox="0 0 800 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración de cuatro chibis sentadas sobre una nube entre estrellas y corazones"></svg>
+      <svg id="scene" viewBox="0 0 800 230" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustración pastel con nubes, estrellas y corazones"></svg>
+      <!-- Banner propio: sube gifs/banner.gif (o .webp, .png, .jpg) y reemplaza la ilustración -->
+      <div class="banner__gif" data-gif="banner" hidden><img alt=""></div>
       <h1 class="banner__name">Nicowo <small lang="ja">ニコウォのへや</small></h1>
     </header>
 
@@ -56,12 +58,10 @@
           </div>
         </section>
 
-        <section class="panel">
+        <!-- Paneles de GIF: se muestran solos cuando existe gifs/izquierda-1.gif, gifs/izquierda-2.gif, etc. -->
+        <section class="panel" data-gif="izquierda-1" hidden>
           <h2 class="panel__title" lang="ja">~ ようこそ ~</h2>
-          <div class="panel__body gifbox">
-            <!-- Para poner un GIF tuyo: <img src="gifs/mi-gif.gif" alt="descripción"> dentro de este div -->
-            <div class="chibi-slot" data-chibi="momo" data-say="hola!" aria-hidden="true"></div>
-          </div>
+          <div class="panel__body gifbox"><img alt=""></div>
         </section>
 
         <section class="panel">
@@ -174,11 +174,14 @@
           </div>
         </section>
 
-        <section class="panel">
-          <h2 class="panel__title">~ gatito ~</h2>
-          <div class="panel__body gifbox">
-            <div class="cat-slot" aria-hidden="true"></div>
-          </div>
+        <section class="panel" data-gif="derecha-1" hidden>
+          <h2 class="panel__title">~ ♡ ~</h2>
+          <div class="panel__body gifbox"><img alt=""></div>
+        </section>
+
+        <section class="panel" data-gif="derecha-2" hidden>
+          <h2 class="panel__title">~ ✦ ~</h2>
+          <div class="panel__body gifbox"><img alt=""></div>
         </section>
 
         <section class="panel">
