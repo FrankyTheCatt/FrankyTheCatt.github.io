@@ -93,7 +93,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
   border-bottom: 2px solid rgba(192, 132, 252, 0.4);
   animation: slide-bg 5s linear infinite;
 }
-.marquee span { display: inline-block; animation: scroll-x 60s linear infinite; }
+.marquee span { display: inline-block; animation: scroll-x 22s linear infinite; }
 @keyframes scroll-x { to { transform: translateX(-50%); } }
 @keyframes slide-bg { to { background-position: 300% 50%; } }
 
@@ -127,7 +127,6 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
 }
-.banner__name small { margin-left: 6px; font-family: var(--font-body); font-size: 0.5em; font-weight: 700; letter-spacing: 0; color: var(--text-soft); }
 
 /* Espacios de imagen (carpeta gifs/) */
 .slot-empty {
@@ -201,6 +200,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 .widget__body { padding: 10px; font-size: 0.85rem; line-height: 1.6; }
 .widget__body p + p { margin-top: 6px; }
 .note { font-size: 0.8rem; color: var(--text-soft); }
+.widget__body--last { text-align: center; font-family: var(--font-vt); font-size: 1.3rem; line-height: 1.2; color: var(--text-title); }
 
 .profile-name { margin-bottom: 8px; font-family: var(--font-vt); font-size: 1.5rem; line-height: 1.1; color: var(--accent); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.95); }
 .info { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
@@ -309,8 +309,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
   border-top-width: 3px;
   border-radius: 0 0 6px 6px;
 }
-.foot__title { font-family: var(--font-pixel); font-size: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
-.foot__text { margin-top: 8px; font-family: var(--font-vt); font-size: 1.1rem; color: var(--text); }
+.foot__face { font-family: var(--font-pixel); font-size: 1rem; letter-spacing: 0.1em; color: var(--accent); }
 
 @media (max-width: 768px) {
   .layout { grid-template-columns: 1fr; }
