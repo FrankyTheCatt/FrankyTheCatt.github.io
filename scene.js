@@ -43,3 +43,38 @@
     document.documentElement.style.setProperty("--bg-image", 'url("' + url + '")');
   });
 })();
+
+// Cinta superior: repite tu texto hasta llenar el ancho y lo mueve a velocidad constante.
+// Para cambiarla, edita el texto del <span> dentro de .marquee en index.html, o PX_POR_SEGUNDO aquí.
+(function () {
+  var PX_POR_SEGUNDO = 180;
+  var bar = document.querySelector(".marquee");
+  var first = bar && bar.querySelector("span");
+  if (!first) return;
+  var phrase = first.textContent.trim();
+
+  function build() {
+    var old = bar.querySelector(".marquee__track") || bar.querySelector("span");
+    var probe = document.createElement("span");
+    probe.textContent = phrase + "   ";
+    probe.style.cssText = "position:absolute;visibility:hidden;padding-right:2rem";
+    bar.appendChild(probe);
+    var w = probe.getBoundingClientRect().width || 200;
+    bar.removeChild(probe);
+    var n = Math.max(2, Math.ceil((window.innerWidth * 1.1) / w));
+    var track = document.createElement("div");
+    track.className = "marquee__track";
+    for (var i = 0; i < 2; i++) {
+      var s = document.createElement("span");
+      s.textContent = new Array(n + 1).join(phrase + "   ");
+      track.appendChild(s);
+    }
+    bar.replaceChild(track, old);
+    var half = track.firstChild.getBoundingClientRect().width;
+    track.style.animationDuration = Math.max(2, half / PX_POR_SEGUNDO) + "s";
+  }
+
+  build();
+  var t;
+  window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(build, 250); });
+})();

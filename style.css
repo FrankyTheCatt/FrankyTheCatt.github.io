@@ -93,7 +93,9 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
   border-bottom: 2px solid rgba(192, 132, 252, 0.4);
   animation: slide-bg 5s linear infinite;
 }
-.marquee span { display: inline-block; animation: scroll-x 22s linear infinite; }
+.marquee span { display: inline-block; }
+.marquee__track { display: inline-flex; animation: scroll-x 10s linear infinite; }
+.marquee__track span { padding-right: 2rem; }
 @keyframes scroll-x { to { transform: translateX(-50%); } }
 @keyframes slide-bg { to { background-position: 300% 50%; } }
 
@@ -324,7 +326,7 @@ code { padding: 0 4px; font-size: 0.88em; background: var(--tint); border-radius
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee, .marquee span, .widget__title { animation: none; }
+  .marquee, .marquee__track, .widget__title { animation: none; }
   .marquee { overflow-x: auto; }
   .stars span { animation: none; opacity: 0.5; }
 }
